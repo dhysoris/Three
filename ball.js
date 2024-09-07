@@ -11,7 +11,7 @@ const canvas = new THREE.WebGLRenderer({ antialias: true})
 canvas.setSize(width, height)
 document.body.appendChild(canvas.domElement)
 
-const fov = 75
+const fov = 90
 const aspect = width / height
 const near = 0.1
 const far = 1000
