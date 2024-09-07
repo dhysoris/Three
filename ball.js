@@ -37,7 +37,7 @@ const meshWire = new THREE.Mesh(geometry, wireMat)
 meshWire.scale.setScalar(1.001)
 mesh.add(meshWire)
 
-const light = new THREE.HemisphereLight(0x000000, 0x111111)
+const light = new THREE.HemisphereLight(0x4d4d4d, 0x1e1e1e)
 scene.add(light)
 
 const controls = new OrbitControls(camera, canvas.domElement)
