@@ -55,4 +55,13 @@ function animate (t = 0) {
     controls.update()
 }
 
+window.addEventListener("resize", () => {
+    let w = window.innerWidth
+    let h = window.innerHeight
+
+    camera.aspect = w / h
+    camera.updateProjectionMatrix()
+    canvas.setSize(w, h)
+})
+
 animate()
